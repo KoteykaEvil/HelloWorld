@@ -1,12 +1,13 @@
 package com.example.helloworld
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import android.widget.Button
+import androidx.fragment.app.Fragment
 import com.example.helloworld.databinding.FragmentFirstBinding
+
 
 class FirstFragment : Fragment() {
     private var _binding: FragmentFirstBinding? = null
@@ -23,9 +24,13 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        binding.buttonFirst.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-//        }
+        binding.floatingActionButton.setOnClickListener {
+
+            val btn: Button = Button(context).apply {
+                text = resources.getText(R.string.btn_first_fragment)
+            }
+            binding.linearLayoutButtons.addView(btn)
+        }
     }
 
     override fun onDestroyView() {
