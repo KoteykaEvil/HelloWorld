@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+
+import androidx.core.view.marginBottom
 import androidx.fragment.app.Fragment
 import com.example.helloworld.databinding.FragmentFirstBinding
 
@@ -28,6 +30,7 @@ class FirstFragment : Fragment() {
 
             val btn: Button = Button(context).apply {
                 text = resources.getText(R.string.btn_first_fragment)
+                setBackgroundResource(R.drawable.style_btn)
             }
             binding.linearLayoutButtons.addView(btn)
         }

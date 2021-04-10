@@ -14,11 +14,12 @@
     <string name="first_btn">Go to 1 fragment</string>
     <string name="second_btn">Go to 2 fragment</string>
     <string name="third_btn">Go to 3 fragment</string>
-    <string name="title_first">Hello</string>
-    <string name="title_second">World</string>
+    <string name="title_first">Привет</string>
+    <string name="title_second">МИР</string>
 
     <string name="btn_first_fragment">Кнопка номер раз</string>
 
     <string name="title_second_fragment">Кнопка плюс добавдляет новую кнопку в контейнер наверху</string>
     <string name="todo">TODO</string>
+    <string name="enter_password">Enter password</string>
 </resources>
